@@ -112,15 +112,15 @@ while True:
                                 "units": "metric" 
                             }
 
-# #######################################################################################
-# # 9. Provide the URL to the OpenWeather API; current weather data for one location.
-#         rw = requests.get("<!!!REPLACEME with URL!!!>", 
-#                              params = openweatherAPIGetParameters
-#                         )
-#         json_data_weather = rw.json()
+#######################################################################################
+# 9. Provide the URL to the OpenWeather API; current weather data for one location.
+        rw = requests.get("http://api.openweathermap.org/data/2.5/weather", 
+                             params = openweatherAPIGetParameters
+                        )
+        json_data_weather = rw.json()
 
-#         if not "weather" in json_data_weather:
-#             raise Exception("Incorrect reply from openweathermap API. Status code: {}. Text: {}".format(rw.status_code, rw.text))
+        if not "weather" in json_data_weather:
+            raise Exception("Incorrect reply from openweathermap API. Status code: {}. Text: {}".format(rw.status_code, rw.text))
 
 # #######################################################################################
 # # 10. Complete the code to get weather description and weather temperature
