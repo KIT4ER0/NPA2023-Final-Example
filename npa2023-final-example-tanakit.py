@@ -1,7 +1,7 @@
 #######################################################################################
-# FirstName/Surname:
-# Student ID:
-# Github repository URL: 
+# FirstName/Surname: Tanakit Singsung
+# Student ID: 6507090
+# Github repository URL: https://github.com/KIT4ER0/NPA2023-Final-Example.git
 #######################################################################################
 # Instruction
 # Reads README.md in https://github.com/chotipat/NPA2023-Final-Example for more information.
@@ -10,7 +10,9 @@
 #######################################################################################
 # 1. Import libraries for API requests, JSON formatting, and time.
 
-<!!!REPLACEME with code for libraries>
+import requests
+import json
+import time
 
 #######################################################################################
 # 2. Assign the Webex hard-coded access token to the variable accessToken.
