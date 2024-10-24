@@ -102,12 +102,15 @@ while True:
         locationLat = json_data[0]["lat"]
         locationLng = json_data[0]["lon"]
 
-# #######################################################################################
-# # 8. Prepare openweatherAPIGetParameters for OpenWeather API, https://openweathermap.org/api; current weather data for one location by geographic coordinates.
-#         # Use current weather data for one location by geographic coordinates API service in Openweathermap
-#         openweatherAPIGetParameters = {
-#                                 "<!!!REPLACEME!!!> with all key:value pairs of parameters!!!>"
-#                             }
+#######################################################################################
+# 8. Prepare openweatherAPIGetParameters for OpenWeather API, https://openweathermap.org/api; current weather data for one location by geographic coordinates.
+        # Use current weather data for one location by geographic coordinates API service in Openweathermap
+        openweatherAPIGetParameters = {
+                                "lat": locationLat,
+                                "lon": locationLng,
+                                "appid": "de3af661089212e1e07e246c254f1ed8",
+                                "units": "metric" 
+                            }
 
 # #######################################################################################
 # # 9. Provide the URL to the OpenWeather API; current weather data for one location.
