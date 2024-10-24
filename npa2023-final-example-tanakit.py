@@ -122,10 +122,10 @@ while True:
         if not "weather" in json_data_weather:
             raise Exception("Incorrect reply from openweathermap API. Status code: {}. Text: {}".format(rw.status_code, rw.text))
 
-# #######################################################################################
-# # 10. Complete the code to get weather description and weather temperature
-#         weather_desc = json_data_weather["<!!!REPLACEME!!!> with path to weather description key!!!>"]
-#         weather_temp = json_data_weather["<!!!REPLACEME!!!> with path to weather temperature key!!!>"]
+#######################################################################################
+# 10. Complete the code to get weather description and weather temperature
+        weather_desc = json_data_weather["weather"][0]["description"]
+        weather_temp = json_data_weather["main"]["temp"]
 
 # #######################################################################################
 # # 11. Complete the code to format the response message.
