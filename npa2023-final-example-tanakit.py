@@ -84,17 +84,17 @@ while True:
             "appid": "de3af661089212e1e07e246c254f1ed8",
         }
 
-# #######################################################################################       
-# # 6. Provide the URL to the OpenWeather Geocoding address API.
-#         # Get location information using the OpenWeather Geocoding API geocode service using the HTTP GET method
-#         r = requests.get("<!!!REPLACEME with URL!!!>", 
-#                              params = openweatherGeoAPIGetParameters
-#                         )
-#         # Verify if the returned JSON data from the OpenWeather Geocoding API service are OK
-#         json_data = r.json()
-#         # check if the status key in the returned JSON data is "0"
-#         if not r.status_code == 200:
-#             raise Exception("Incorrect reply from OpenWeather Geocoding API. Status code: {}".format(r.statuscode))
+#######################################################################################       
+# 6. Provide the URL to the OpenWeather Geocoding address API.
+        # Get location information using the OpenWeather Geocoding API geocode service using the HTTP GET method
+        r = requests.get("http://api.openweathermap.org/geo/1.0/direct", 
+                             params = openweatherGeoAPIGetParameters
+                        )
+        # Verify if the returned JSON data from the OpenWeather Geocoding API service are OK
+        json_data = r.json()
+        # check if the status key in the returned JSON data is "0"
+        if not r.status_code == 200:
+            raise Exception("Incorrect reply from OpenWeather Geocoding API. Status code: {}".format(r.statuscode))
 
 # #######################################################################################
 # # 7. Provide the OpenWeather Geocoding key values for latitude and longitude.
