@@ -72,17 +72,17 @@ while True:
         location = message.split("/Tanakit", 1)[1].strip()
         print(location)
 
-# #######################################################################################     
-# # 5. Prepare openweather Geocoding APIGetParameters..
-#         # Openweather Geocoding API GET parameters:
-#         # - "q" is the the location to lookup
-#         # - "limit" is always 1
-#         # - "key" is the openweather API key, https://home.openweathermap.org/api_keys
-#         openweatherGeoAPIGetParameters = {
-#             "q": location,
-#             "limit": 1,
-#             "appid": "<!!!REPLACEME with your Openweather API Key!!!>",
-#         }
+#######################################################################################     
+# 5. Prepare openweather Geocoding APIGetParameters..
+        # Openweather Geocoding API GET parameters:
+        # - "q" is the the location to lookup
+        # - "limit" is always 1
+        # - "key" is the openweather API key, https://home.openweathermap.org/api_keys
+        openweatherGeoAPIGetParameters = {
+            "q": location,
+            "limit": 1,
+            "appid": "de3af661089212e1e07e246c254f1ed8",
+        }
 
 # #######################################################################################       
 # # 6. Provide the URL to the OpenWeather Geocoding address API.
